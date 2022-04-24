@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net472;netstandard2.0</TargetFrameworks>
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<Optimize>true</Optimize>
+		<RootNamespace>$(AssemblyName)</RootNamespace>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+		<GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+		<OutputPath>Files\Bin\netstandard</OutputPath>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(TargetFramework)' == 'net472' ">
+		<OutputPath>Files\Bin</OutputPath>
+	</PropertyGroup>
+	
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net472' ">
+		<Reference Include="System.ServiceModel" />
+		<Reference Include="System.ServiceModel.Activation" />
+		<Reference Include="System.ServiceModel.Web" />
+		<Reference Include="System.Web" />
+	</ItemGroup>
+
+	<ItemGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' ">
+		
+	</ItemGroup>
+	
+	<ItemGroup>
+		<Compile Remove="Assemblies\**" />
+		<Compile Remove="Data\**" />
+		<Compile Remove="Files\Bin\**" />
+		<Compile Remove="packages\**" />
+		<Compile Remove="Resources\**" />
+		<Compile Remove="Schemas\**" />
+		<Compile Remove="SqlScripts\**" />
+		<EmbeddedResource Remove="Assemblies\**" />
+		<EmbeddedResource Remove="Data\**" />
+		<EmbeddedResource Remove="Files\Bin\**" />
+		<EmbeddedResource Remove="packages\**" />
+		<EmbeddedResource Remove="Resources\**" />
+		<EmbeddedResource Remove="Schemas\**" />
+		<EmbeddedResource Remove="SqlScripts\**" />
+		<None Remove="Assemblies\**" />
+		<None Remove="Data\**" />
+		<None Remove="Files\Bin\**" />
+		<None Remove="packages\**" />
+		<None Remove="Resources\**" />
+		<None Remove="Schemas\**" />
+		<None Remove="SqlScripts\**" />
+	</ItemGroup>
+
+	
+	<ItemGroup>
+		<PackageReference Include="Codecrete.SwissQRBill.Windows" Version="3.0.3" />
+		<PackageReference Include="Common.Logging" Version="3.4.1" />
+		<PackageReference Include="CreatioSDK" Version="7.18.5.1500">
+			<TreatAsUsed>true</TreatAsUsed>
+		</PackageReference>
+		
+		<!--<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />-->
+		<PackageReference Include="Aspose.BarCode" Version="22.3.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.6" />
+	</ItemGroup>
+		
+	<ItemGroup>
+	  <ProjectReference Include="..\BarCodeDemo.Api\BarCodeDemo.Api.csproj" />
+	</ItemGroup>
+</Project>

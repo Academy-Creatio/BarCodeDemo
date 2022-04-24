@@ -1,0 +1,16 @@
+﻿{
+  "Descriptor": {
+    "UId": "b41fe21e-f1b9-49a2-8b0d-8387d63905c5",
+    "PackageVersion": "7.8.0",
+    "Name": "BarCodeDemo",
+    "ModifiedOnUtc": "\/Date(1650562894000)\/",
+    "Maintainer": "Customer",
+    "DependsOn": [
+      {
+        "UId": "2fabaf6c-0f92-4530-aef8-40345c021da2",
+        "PackageVersion": "7.8.0",
+        "Name": "ProductCore"
+      }
+    ]
+  }
+}

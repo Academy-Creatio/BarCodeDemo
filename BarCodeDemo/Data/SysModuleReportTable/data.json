@@ -1,0 +1,61 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "b48afeb8-1a43-45f3-8a27-f30d1bd796db"
+        },
+        {
+          "SchemaColumnUId": "154371d2-7624-4a1b-8019-e5c202c2260d",
+          "Value": ""
+        },
+        {
+          "SchemaColumnUId": "1a6de7b4-2b63-4983-989c-e5f5ad91c559",
+          "Value": "Id"
+        },
+        {
+          "SchemaColumnUId": "1ec0aaa5-139f-e8c5-7269-e96044b51ae1",
+          "Value": "{\"className\":\"Terrasoft.FilterGroup\",\"items\":{},\"logicalOperation\":0,\"isEnabled\":true,\"filterType\":6,\"key\":\"\"}"
+        },
+        {
+          "SchemaColumnUId": "2f560358-9c67-4ddb-8ae8-e9507c0faab9",
+          "Value": "Image"
+        },
+        {
+          "SchemaColumnUId": "2f929142-c949-4965-822b-718d744291fa",
+          "Value": "93986bfe-2dbd-46bc-9bf9-d03dfefbf3b8"
+        },
+        {
+          "SchemaColumnUId": "6e37e4a0-1c37-4475-83aa-dd218ff47173",
+          "Value": "0495373c-5053-4ae3-b553-dc92779c4702"
+        },
+        {
+          "SchemaColumnUId": "79a3fa68-aef2-4ed5-86d2-5fb4dc4a7ae3",
+          "Value": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617"
+        },
+        {
+          "SchemaColumnUId": "7ac8fc3b-9f5f-40d3-8918-3c18bc54cc23",
+          "Value": "Photo"
+        },
+        {
+          "SchemaColumnUId": "8501dbf4-1603-4e8b-b875-e1d9c8de5e8c",
+          "Value": "0d2724bb-2a6b-ceda-e136-bdfd466864ff",
+          "DisplayValue": "Sample Image"
+        },
+        {
+          "SchemaColumnUId": "b368f76c-1279-4700-8914-e821390edfdd",
+          "Value": false
+        },
+        {
+          "SchemaColumnUId": "b54b15ab-474f-117c-f6ae-616896984747",
+          "Value": "[{caption:\"Image\",metaPath:\"1e236958-f206-4fde-8a0e-6783fc223424\",metaPathCaption:\"Image\",aggregationType:\"None\",subFilters:null,dataValueType:\"Binary\"}]"
+        },
+        {
+          "SchemaColumnUId": "dcbcf570-397b-4c65-bc5c-ffc91e6cc60a",
+          "Value": "Image"
+        }
+      ]
+    }
+  ]
+}

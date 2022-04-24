@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Codecrete.SwissQRBill.Windows" Version="3.0.3" />
+    <PackageReference Include="CreatioSDK" Version="7.18.5.1500" />
+    <PackageReference Include="Common.Logging" Version="3.4.1" />
+  </ItemGroup>
+
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="xcopy $(TargetPath) $(SolutionDir)\Assemblies\$(ProjectName)\ /S /Y&#xD;&#xA;xcopy $(TargetDir)\$(ProjectName).pdb $(SolutionDir)\Assemblies\$(ProjectName) /S /Y&#xD;&#xA;xcopy $(TargetDir)\$(ProjectName).xml $(SolutionDir)\Assemblies\$(ProjectName) /S /Y" />
+	</Target>
+</Project>

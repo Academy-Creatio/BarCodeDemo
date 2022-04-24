@@ -1,0 +1,29 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ProcessUserTaskSchemaManager",
+      "UId": "561628cf-beb5-4b25-adf6-a7beca2b5496",
+      "A2": "DlbGenerateSwissQrCode",
+      "A5": "c511359b-cfbc-4cc7-a8b9-c80feb7f786f",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "b41fe21e-f1b9-49a2-8b0d-8387d63905c5",
+      "B8": "7.18.5.1500",
+      "FJ1": [
+        {
+          "BL1": "Terrasoft.Core.Process.ProcessSchemaParameter",
+          "UId": "acb45674-7741-58c8-29e3-2663f9c55a8a",
+          "A2": "EntityUnderLoad",
+          "A3": "561628cf-beb5-4b25-adf6-a7beca2b5496",
+          "A4": "561628cf-beb5-4b25-adf6-a7beca2b5496",
+          "L1": "ebd85d37-0abf-4bbf-bb32-97dc3dffcc8c",
+          "L8": {},
+          "L11": false
+        }
+      ],
+      "FK12": "#839DC3",
+      "FK16": true
+    }
+  }
+}

@@ -1,0 +1,327 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BarCodeDemo.Api</name>
+    </assembly>
+    <members>
+        <member name="M:BarCodeDemo.Api.BarCode.IBarCodeGenerator.GenerateBusinesscard(BarCodeDemo.Api.DataModel.IContactDataModel)">
+            <summary>
+            Generates bar code with <paramref name="contact"/> information
+            </summary>
+            <param name="contact"></param>
+            <returns> Stream of bardcore image</returns>
+        </member>
+        <member name="M:BarCodeDemo.Api.BarCode.IBarCodeGenerator.GenerateSissQrCode(BarCodeDemo.Api.DataModel.IBillDataModel)">
+            <summary>
+            Generates SwissQR code
+            </summary>
+            <param name="billDataModel"></param>
+            <returns></returns>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IBillDataModel.GraphicsFormat">
+            <inheritdoc cref="!:Format"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IBillDataModel.Language">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.IBillDataModel.Language"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IBillDataModel.OutputSize">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.IBillDataModel.OutputSize"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IBillDataModel.Payee">
+            <inheritdoc cref="T:BarCodeDemo.Api.DataModel.IBillParticipant"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IBillDataModel.Payor">
+            <inheritdoc cref="T:BarCodeDemo.Api.DataModel.IBillParticipant"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.BillDataModel.Language">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.BillDataModel.Language"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.BillDataModel.GraphicsFormat">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.BillDataModel.GraphicsFormat"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.BillDataModel.OutputSize">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.BillDataModel.OutputSize"/>
+        </member>
+        <member name="T:BarCodeDemo.Api.DataModel.IBillParticipant">
+            <summary>
+            Bill participant, either payor or payee
+            </summary>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IBillParticipant.AddressLine1">
+            <summary>
+            Participant AddressLine1
+            </summary>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IBillParticipant.AddressLine2">
+            <summary>
+            Participant AddressLine2
+            </summary>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IBillParticipant.CountryCode">
+            <summary>
+            Participant country code
+            </summary>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IBillParticipant.Name">
+            <summary>
+            Participant Name
+            </summary>
+        </member>
+        <member name="T:BarCodeDemo.Api.DataModel.BillParticipant">
+            <inheritdoc cref="T:BarCodeDemo.Api.DataModel.IBillParticipant"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.BillParticipant.Name">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.IBillParticipant.Name"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.BillParticipant.AddressLine1">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.IBillParticipant.AddressLine1"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.BillParticipant.AddressLine2">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.IBillParticipant.AddressLine2"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.BillParticipant.CountryCode">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.IBillParticipant.CountryCode"/>
+        </member>
+        <member name="T:BarCodeDemo.Api.DataModel.Language">
+            <summary>
+            QR bill language
+            </summary>
+        </member>
+        <member name="F:BarCodeDemo.Api.DataModel.Language.DE">
+            <summary>
+            German language.
+            </summary>
+        </member>
+        <member name="F:BarCodeDemo.Api.DataModel.Language.FR">
+            <summary>
+            French language.
+            </summary>
+        </member>
+        <member name="F:BarCodeDemo.Api.DataModel.Language.IT">
+            <summary>
+            Italian language.
+            </summary>
+        </member>
+        <member name="F:BarCodeDemo.Api.DataModel.Language.RM">
+            <summary>
+            Romansh language.
+            </summary>
+        </member>
+        <member name="F:BarCodeDemo.Api.DataModel.Language.EN">
+            <summary>
+            English language.
+            </summary>
+        </member>
+        <member name="T:BarCodeDemo.Api.DataModel.GraphicsFormat">
+            <summary>
+            Graphics format of generated QR bill.
+            </summary>
+        </member>
+        <member name="F:BarCodeDemo.Api.DataModel.GraphicsFormat.SVG">
+            <summary>
+            SVG graphics format.
+            </summary>
+        </member>
+        <member name="F:BarCodeDemo.Api.DataModel.GraphicsFormat.PNG">
+            <summary>
+            PNG graphics format.
+            </summary>
+        </member>
+        <member name="F:BarCodeDemo.Api.DataModel.GraphicsFormat.PDF">
+            <summary>
+            PDF graphics format.
+            </summary>
+        </member>
+        <member name="T:BarCodeDemo.Api.DataModel.OutputSize">
+            <summary>
+            The output size of the QR bill or QR code.
+            </summary>
+            <seealso href="https://github.com/manuelbl/SwissQRBill/wiki/Output-Sizes">Output Sizes (in Wiki)</seealso>
+        </member>
+        <member name="F:BarCodeDemo.Api.DataModel.OutputSize.QrBillOnly">
+            <summary>
+            QR bill only (105 by 210 mm).
+            <para>
+            This size is suitable if the QR bill has no horizontal line.
+            If the horizontal line is needed and the A4 sheet size is not
+            suitable, use <see cref="F:BarCodeDemo.Api.DataModel.OutputSize.QrBillExtraSpace"/> instead.
+            </para>
+            </summary>
+        </member>
+        <member name="F:BarCodeDemo.Api.DataModel.OutputSize.A4PortraitSheet">
+            <summary>
+            A4 sheet in portrait orientation. The QR bill is at the bottom.
+            </summary>
+        </member>
+        <member name="F:BarCodeDemo.Api.DataModel.OutputSize.QrCodeOnly">
+            <summary>
+            QR code only (46 by 46 mm).
+            </summary>
+        </member>
+        <member name="F:BarCodeDemo.Api.DataModel.OutputSize.QrBillExtraSpace">
+            <summary>
+            QR bill only with additional space at the top for the horizontal line (about 110 by 210 mm).
+            <para>
+            The extra 5 mm at the top create space for the horizontal line and
+            optionally for the scissors.
+            </para>
+            </summary>
+        </member>
+        <member name="T:BarCodeDemo.Api.DataModel.IContactDataModel">
+            <summary>
+            Contact Model
+            </summary>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IContactDataModel.CityName">
+            <summary>
+            Address CityName
+            </summary>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IContactDataModel.CountryName">
+            <summary>
+            Address Country name
+            </summary>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IContactDataModel.RegionName">
+            <summary>
+            Address Resion name
+            </summary>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IContactDataModel.Name">
+            <summary>
+            Contact name
+            </summary>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IContactDataModel.Phone">
+            <summary>
+            Contact phone
+            </summary>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IContactDataModel.MobilePhone">
+            <summary>
+            Contact cell phone
+            </summary>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IContactDataModel.Email">
+            <summary>
+            Contact email
+            </summary>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IContactDataModel.BirthDate">
+            <summary>
+            Contact birth date
+            </summary>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IContactDataModel.Address">
+            <summary>
+            Contact address
+            </summary>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IContactDataModel.Zip">
+            <summary>
+            Contact Zip
+            </summary>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.IContactDataModel.AccountName">
+            <summary>
+            Contact Zip
+            </summary>
+        </member>
+        <member name="T:BarCodeDemo.Api.DataModel.ContactDataModel">
+            <inheritdoc cref="T:BarCodeDemo.Api.DataModel.IContactDataModel"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.ContactDataModel.Name">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.IContactDataModel.Name"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.ContactDataModel.Email">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.IContactDataModel.Email"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.ContactDataModel.MobilePhone">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.IContactDataModel.MobilePhone"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.ContactDataModel.Phone">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.IContactDataModel.Phone"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.ContactDataModel.CountryName">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.IContactDataModel.CountryName"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.ContactDataModel.CityName">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.IContactDataModel.CityName"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.ContactDataModel.RegionName">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.IContactDataModel.RegionName"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.ContactDataModel.BirthDate">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.IContactDataModel.BirthDate"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.ContactDataModel.Address">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.IContactDataModel.Address"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.ContactDataModel.Zip">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.IContactDataModel.Zip"/>
+        </member>
+        <member name="P:BarCodeDemo.Api.DataModel.ContactDataModel.AccountName">
+            <inheritdoc cref="P:BarCodeDemo.Api.DataModel.IContactDataModel.AccountName"/>
+        </member>
+        <member name="T:BarCodeDemo.Api.IApplication">
+            <summary>
+            Main Application
+            </summary>
+        </member>
+        <member name="M:BarCodeDemo.Api.IApplication.GetService``1">
+            <summary>
+            Gets requested service from the application
+            </summary>
+            <typeparam name="T">Service to get from the application</typeparam>
+            <returns>Resulved service</returns>
+        </member>
+        <member name="T:BarCodeDemo.Api.IBuilder`1">
+            <summary>
+            Abstraction for application configuration
+            </summary>
+            <typeparam name="TResult">Type of application to build</typeparam>
+        </member>
+        <member name="M:BarCodeDemo.Api.IBuilder`1.ConfigureUserConnection(Terrasoft.Core.UserConnection)">
+            <summary>Stage: Configure UserConnection</summary>
+            <param name="userConnection">UserConnection</param>
+            <returns>Next Stage</returns>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when <paramref name="userConnection"/> is <see langword="null"/>
+            </exception>
+            <remarks>
+            <see cref="T:System.ArgumentNullException"/> thrown when <paramref name="userConnection"/> is <see langword="null"/>
+            </remarks>
+        </member>
+        <member name="T:BarCodeDemo.Api.IStage2`1">
+            <summary>
+            Stage: Build Application
+            </summary>
+            <typeparam name="TResult">Application to build</typeparam>
+        </member>
+        <member name="M:BarCodeDemo.Api.IStage2`1.ConfigureLogger(Common.Logging.ILog)">
+            <summary>
+            Logger to be associated with the application
+            </summary>
+            <param name="logger">ILogger</param>
+            <returns>Next Stage</returns>
+            <exception cref="T:System.ArgumentNullException">
+            Thrown when <paramref name="logger"/> is <see langword="null"/>
+            </exception>
+            <remarks>
+            <see cref="T:System.ArgumentNullException"/> thrown when <paramref name="logger"/> is <see langword="null"/>
+            </remarks>
+        </member>
+        <member name="T:BarCodeDemo.Api.IStageBuild`1">
+            <summary>
+            Stage: Build Application
+            </summary>
+            <typeparam name="TResult">Application to build</typeparam>
+        </member>
+        <member name="M:BarCodeDemo.Api.IStageBuild`1.Build">
+            <summary>
+            Build Application
+            </summary>
+            <returns>Configured application</returns>
+        </member>
+    </members>
+</doc>

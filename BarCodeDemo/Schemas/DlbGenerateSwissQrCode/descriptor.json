@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "561628cf-beb5-4b25-adf6-a7beca2b5496",
+    "Name": "DlbGenerateSwissQrCode",
+    "ModifiedOnUtc": "\/Date(1650807315000)\/",
+    "ManagerName": "ProcessUserTaskSchemaManager",
+    "Caption": "DlbGenerateSwissQrCode",
+    "DependsOn": []
+  }
+}

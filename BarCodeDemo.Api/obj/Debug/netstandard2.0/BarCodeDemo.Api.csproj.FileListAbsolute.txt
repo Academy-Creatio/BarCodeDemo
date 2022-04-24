@@ -1,0 +1,12 @@
+C:\inetpub\wwwroot\salesloft\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\BarCodeDemo.Api\bin\Debug\netstandard2.0\BarCodeDemo.Api.deps.json
+C:\inetpub\wwwroot\salesloft\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\BarCodeDemo.Api\bin\Debug\netstandard2.0\BarCodeDemo.Api.dll
+C:\inetpub\wwwroot\salesloft\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\BarCodeDemo.Api\bin\Debug\netstandard2.0\BarCodeDemo.Api.pdb
+C:\inetpub\wwwroot\salesloft\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\BarCodeDemo.Api\bin\Debug\netstandard2.0\BarCodeDemo.Api.xml
+C:\inetpub\wwwroot\salesloft\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\BarCodeDemo.Api\obj\Debug\netstandard2.0\BarCodeDemo.Api.csproj.AssemblyReference.cache
+C:\inetpub\wwwroot\salesloft\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\BarCodeDemo.Api\obj\Debug\netstandard2.0\BarCodeDemo.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\inetpub\wwwroot\salesloft\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\BarCodeDemo.Api\obj\Debug\netstandard2.0\BarCodeDemo.Api.AssemblyInfoInputs.cache
+C:\inetpub\wwwroot\salesloft\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\BarCodeDemo.Api\obj\Debug\netstandard2.0\BarCodeDemo.Api.AssemblyInfo.cs
+C:\inetpub\wwwroot\salesloft\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\BarCodeDemo.Api\obj\Debug\netstandard2.0\BarCodeDemo.Api.csproj.CoreCompileInputs.cache
+C:\inetpub\wwwroot\salesloft\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\BarCodeDemo.Api\obj\Debug\netstandard2.0\BarCodeDemo.Api.dll
+C:\inetpub\wwwroot\salesloft\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\BarCodeDemo.Api\obj\Debug\netstandard2.0\BarCodeDemo.Api.xml
+C:\inetpub\wwwroot\salesloft\Terrasoft.WebApp\Terrasoft.Configuration\Pkg\BarCodeDemo.Api\obj\Debug\netstandard2.0\BarCodeDemo.Api.pdb

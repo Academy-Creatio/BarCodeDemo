@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Columns.DlbSwissQrCode.Caption" Value="Swiss Qr Code" />
+			<Item Name="EventsProcessSchema.BaseElements.EventSubProcess4_16e3fee375e14bff94a0ceec944579d5.Caption" Value="After Contact Loaded" />
+			<Item Name="EventsProcessSchema.BaseElements.ScriptTask_onContactLoaded.Caption" Value="GetBarCode" />
+			<Item Name="EventsProcessSchema.BaseElements.StartMessage4_594fbd46eab44a77aa95de915d685c01.Caption" Value="ContactLoaded" />
+			<Item Name="EventsProcessSchema.BaseElements.UserTask_DlbGenerateSwissQrCode.Caption" Value="DlbGenerateSwissQrCode" />
+			<Item Name="EventsProcessSchema.BaseElements.UserTask_DlbGenerateSwissQrCode.Parameters.EntityUnderLoad.Caption" Value="EntityUnderLoad" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_b801adec9df949098145e298aca09ba5.Caption" Value="LaneSet 1" />
+			<Item Name="EventsProcessSchema.LaneSets.LaneSet_b801adec9df949098145e298aca09ba5.Lanes.Lane_711f91f5382740aabe48095882cb01b4.Caption" Value="Lane 1" />
+		</Items>
+	</Group>
+</Resources>
